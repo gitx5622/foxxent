@@ -1,0 +1,111 @@
+@import "../variables";
+@import "../mediaQuery";
+
+h1,h2,h3,h4,h5,h6 {
+  color: $secondary-color;
+}
+.foxx-landing-page {
+  background: $primary-color;
+
+  .foxx-part-one {
+    .foxx-top-links {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      gap: 2em;
+      padding: 1em;
+
+      h3 {
+        color: #e50914;
+        font-size: 2em;
+        font-weight: 600;
+      }
+      .foxx-topbar-links {
+        justify-self: end;
+        padding: 0.1em 4em;
+
+        .custom-button {
+          background: #e50914;
+          padding: 0.1em 2em;
+          margin-left: 1em;
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .foxx-middle-links {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      gap:1em;
+      padding: 7em 5em;
+
+      h1 {
+        font-weight: 700;
+        font-size: 3em;
+      }
+      .custom-button {
+        background: #e50914;
+        padding: 0.5em 2em;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .foxx-part-two {
+    border-top: 3px solid $box-shadow-color;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    gap: 1em;
+
+    .animations {
+      padding: 1.5em 0.5em;
+
+      h1 {
+        font-weight: 500;
+      }
+      p {
+        margin-top: 1em;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .foxx-part-three {
+    border-top: 3px solid $box-shadow-color;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    gap: 1em;
+
+    .animations {
+      padding: 1.5em 0.5em;
+
+      h1 {
+        font-weight: 500;
+      }
+      p {
+        margin-top: 1em;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .foxx-part-four {
+    border-top: 3px solid $box-shadow-color;
+    border-bottom: 3px solid $box-shadow-color;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    gap: 1em;
+
+    .animations {
+      padding: 1.5em 0.5em;
+
+      h1 {
+        font-weight: 500;
+      }
+      p {
+        margin-top: 1em;
+        color: $secondary-color;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,93 @@
+@import "../variables";
+@import "../mediaQuery";
+
+.homex {
+  background: $primary-color;
+
+  .foxx-part-one {
+    .foxx-top-links {
+      display: grid;
+      grid-template-columns: 30% 40% 30%;
+      gap: 0.2em;
+      padding: 0.5em;
+
+      h3 {
+        color: #e50914;
+        font-size: 2em;
+        font-weight: 600;
+      }
+
+      .foxx-topbar-links {
+        justify-self: end;
+        padding: 0.1em 4em;
+
+        .custom-button {
+          background: #e50914;
+          border-radius: 50%;
+          padding: 0.1em 2em;
+          margin-left: 1em;
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .foxx-middle-links {
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr;
+      gap: 1em;
+      padding: 7em 5em;
+
+      h1 {
+        font-weight: 700;
+        font-size: 1em;
+      }
+
+      .custom-button {
+        background: #e50914;
+        padding: 0.3em 0.2em;
+        color: $secondary-color;
+      }
+
+      .more-info {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 1em;
+      }
+    }
+  }
+  .genres {
+    .genres-button {
+      background: #e50914;
+      border-radius: 2em;
+      padding: 0.2em 0.2em;
+      color: $secondary-color;
+      margin: 0.5em;
+    }
+  }
+  .slider-one {
+    .discover-movies {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 0.5em;
+    }
+  }
+  .slider-two {
+    .discover-series {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 0.5em;
+      img {
+        border-radius: 10px;
+        height: 70%;
+      }
+    }
+  }
+  .slider-three {
+    margin-top: -5em;
+    .discover-movies {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 0.5em;
+    }
+  }
+}

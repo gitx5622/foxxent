@@ -1,0 +1,22 @@
+export const LOADING = 'LOADING';
+export const SUCCESS = 'SUCCESS';
+export const ERROR = 'ERROR';
+export const RESET = 'RESET';
+
+
+export const GET_MOVIES = "GET_MOVIES";
+export const GET_MOVIES_SUCCESS = "GET_MOVIES_SUCCESS"
+export const GET_MOVIES_ERROR = "GET_MOVIES_ERROR";
+
+export const GET_SERIES = "GET_SERIES";
+export const GET_SERIES_SUCCESS = "GET_SERIES_SUCCESS"
+export const GET_SERIES_ERROR = "GET_SERIES_ERROR";
+
+export const GET_TV_GENRES = "GET_TV_GENRES";
+export const GET_TV_GENRES_SUCCESS = "GET_TV_GENRES_SUCCESS"
+export const GET_TV_GENRES_ERROR = "GET_TV_GENRES_ERROR";
+
+export const GET_MOVIE_GENRES = "GET_MOVIE_GENRES";
+export const GET_MOVIE_GENRES_SUCCESS = "GET_MOVIE_GENRES_SUCCESS"
+export const GET_MOVIE_GENRES_ERROR = "GET_MOVIE_GENRES_ERROR";
+

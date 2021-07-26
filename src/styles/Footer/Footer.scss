@@ -1,0 +1,25 @@
+@import "../variables";
+@import "../mediaQuery";
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+  margin: 2em;
+
+  .foxx {
+    padding-left: 6em;
+  }
+
+  .links {
+    li {
+      color: $secondary-color;
+      padding: 1em 1em;
+      cursor: pointer;
+    }
+  }
+  .copyright {
+    text-align: center;
+    margin-top: -2em;
+    padding-bottom: 1em;
+  }
+}
