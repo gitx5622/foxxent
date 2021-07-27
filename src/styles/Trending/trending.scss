@@ -1,0 +1,13 @@
+@import "../variables";
+@import "../mediaQuery";
+
+.homex {
+.discover-trending {
+  padding-bottom: 3.6em;
+  .trending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+}

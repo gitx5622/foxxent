@@ -3,6 +3,9 @@ export const SUCCESS = 'SUCCESS';
 export const ERROR = 'ERROR';
 export const RESET = 'RESET';
 
+export const GET_TRENDING = "GET_MOVIES";
+export const GET_TRENDING_SUCCESS = "GET_TRENDING_SUCCESS"
+export const GET_TRENDING_ERROR = "GET_TRENDING_ERROR";
 
 export const GET_MOVIES = "GET_MOVIES";
 export const GET_MOVIES_SUCCESS = "GET_MOVIES_SUCCESS"

@@ -1,12 +1,12 @@
 import axiosConfig from '../../config/axiosConfig';
 import {GET_SERIES, GET_SERIES_ERROR, GET_SERIES_SUCCESS} from "../dispatchTypes";
 
-export const discoverSeries = (dispatch) => {
+export const discoverSeries = (dispatch, page) => {
     dispatch({
         type: GET_SERIES,
     });
     axiosConfig
-        .get(`discover/tv?api_key=2998365350d817e64e3abcd94126560c`)
+        .get(`discover/tv?api_key=2998365350d817e64e3abcd94126560c&page=${page}`)
         .then(response => {
             dispatch({
                 type: GET_SERIES_SUCCESS,

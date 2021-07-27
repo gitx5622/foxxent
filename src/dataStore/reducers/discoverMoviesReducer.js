@@ -5,12 +5,10 @@ export const initialMovieState = {
     isError: false,
     isSuccess: false,
     errorMessage: '',
-    movies: {
-        pages: "",
-        results: [],
-        total_pages: "",
-        total_results: ""
-    },
+    pages: 1,
+    results: [],
+    total_pages: "",
+    total_results: ""
 }
 
 export const discoverMoviesReducer = (
@@ -30,7 +28,8 @@ export const discoverMoviesReducer = (
                 ...state,
                 isLoading: false,
                 isSuccess: true,
-                movies: action.movies,
+                results: action.results,
+                total_pages: action.total_pages
             };
         }
         case GET_MOVIES_ERROR: {

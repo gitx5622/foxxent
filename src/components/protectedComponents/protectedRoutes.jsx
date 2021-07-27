@@ -23,8 +23,6 @@ const ProtectedRoutes = ({ location }) => {
 
     const isBrandPage =
         location.pathname === '/' ||
-        location.pathname === '/reviews' ||
-        location.pathname === '/blog' ||
         location.pathname === '/contact' ||
         location.pathname === '/about';
 

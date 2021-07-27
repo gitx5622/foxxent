@@ -14,8 +14,8 @@ const Landing = ({ history }) => {
                         <h3>Foxx Entertainment</h3>
                     </div>
                     <div className="foxx-topbar-links">
-                        <Button squared className="custom-button" >Login</Button>
-                        <Button squared className="custom-button" >Create a new account</Button>
+                        <Button squared className="custom-button" onClick={() => history.push('/dashboard/home')} >Dashboard</Button>
+                        <Button squared className="custom-button" onClick={() => history.push('/dashboard/home')}>It's Free!! Enjoy</Button>
                     </div>
                 </div>
                 <div className="foxx-middle-links">

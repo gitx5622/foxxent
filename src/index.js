@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import DataStore from './dataStore';
 import './styles/index.scss';
 
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
 window.onload = () => {
     hydrate(
         <Provider store={DataStore}>
