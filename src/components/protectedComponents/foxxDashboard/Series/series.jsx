@@ -28,7 +28,7 @@ const Series = withRouter(({ history }) => {
         <div className="homex">
             <div className="discover-trending">
                 <h2>Foxx series</h2>
-                <div className="trending animate__animated animate__backInLeft">
+                <div className="trending animate__animated animate__bounceInRight">
                     {results
                         .map((trending) =>
                             <SingleContent

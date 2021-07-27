@@ -7,7 +7,7 @@ import {withRouter} from "react-router-dom";
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import TvIcon from "@material-ui/icons/Tv";
 import MovieIcon from "@material-ui/icons/Movie";
-import SearchIcon from "@material-ui/icons/Search";
+
 
 const useStyles = makeStyles({
     root: {
@@ -27,7 +27,6 @@ const  SimpleBottomNavigation = ({history}) => {
     if (value === 0 ) history.push('/dashboard/home');
     else if ( value === 1 ) history.push('/dashboard/movies');
     else if ( value === 2 ) history.push('/dashboard/series');
-    else if ( value === 3 ) history.push('/dashboard/search');
     }, [history, value])
 
     return (
@@ -43,7 +42,6 @@ const  SimpleBottomNavigation = ({history}) => {
             <BottomNavigationAction style={{color:"white"}} label="Trending" icon={<WhatshotIcon />} />
             <BottomNavigationAction style={{color:"white"}} label="Movies" icon={<MovieIcon />} />
             <BottomNavigationAction style={{color:"white"}} label="Tv Series" icon={<TvIcon />} />
-            <BottomNavigationAction style={{color:"white"}} label="Search" icon={<SearchIcon />} />
         </BottomNavigation>
     );
 }

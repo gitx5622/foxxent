@@ -6,7 +6,6 @@ import {discoverMovies} from "../../../../dataStore/actions/discoverMovies";
 import SingleContent from "../SingleContent/singleContent";
 import CustomPagination from "../Pagination/CustomPagination";
 
-
 const Movies = withRouter(({ history }) => {
     const [page, setPage] = useState(1)
     const dispatch = useDispatch();

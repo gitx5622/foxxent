@@ -13,7 +13,8 @@ import {Button} from "@material-ui/core";
 const FoxxDashboard = withRouter(({
        match: {
            params: { dashboard_route },
-       }
+       },
+       history,
    }) => {
     const renderDashboardScreens = () => {
         switch (dashboard_route) {
@@ -45,14 +46,14 @@ const FoxxDashboard = withRouter(({
                             <h3 onClick={() => window.scroll(0, 0)}>Foxx Entertainment</h3>
                         </div>
                         <div className="foxx-topbar-links">
-                            <Button squared className="custom-button" ><h5>Home</h5></Button>
-                            <Button squared className="custom-button" ><h5>Tv shows</h5></Button>
-                            <Button squared className="custom-button" ><h5>Movies</h5></Button>
+                            <Button squared className="custom-button"  onClick={() => history.push('/dashboard/home')}><h5>Home</h5></Button>
+                            <Button squared className="custom-button" onClick={() => history.push('/dashboard/series')}><h5>Tv shows</h5></Button>
+                            <Button squared className="custom-button" onClick={() => history.push('/dashboard/movies')}><h5>Movies</h5></Button>
                         </div>
-                        <div className="foxx-topbar-links">
-                            <Button squared className="custom-button" ><h5>Search</h5></Button>
-                            <Button squared className="custom-button" ><h5>Logout</h5></Button>
-                        </div>
+                        {/*<div className="foxx-topbar-links">*/}
+                        {/*    <Button squared className="custom-button" ><h5>Search</h5></Button>*/}
+                        {/*    <Button squared className="custom-button" ><h5>Logout</h5></Button>*/}
+                        {/*</div>*/}
                     </div>
                     <div className="foxx-middle-links">
                         <div>
