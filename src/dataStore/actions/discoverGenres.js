@@ -12,7 +12,7 @@ export const discoverTvGenres = (dispatch) => {
         type: GET_TV_GENRES,
     });
     axiosConfig
-        .get(`genre/tv/list?api_key=2998365350d817e64e3abcd94126560c`)
+        .get(`https://api.themoviedb.org/3/genre/tv/list?api_key=2998365350d817e64e3abcd94126560c&language=en-US`)
         .then(response => {
             dispatch({
                 type: GET_TV_GENRES_SUCCESS,
@@ -38,7 +38,7 @@ export const discoverMovieGenres = (dispatch) => {
         type: GET_MOVIE_GENRES,
     });
     axiosConfig
-        .get(`genre/movie/list?api_key=2998365350d817e64e3abcd94126560c`)
+        .get(`https://api.themoviedb.org/3/genre/movie/list?api_key=2998365350d817e64e3abcd94126560c&language=en-US`)
         .then(response => {
             dispatch({
                 type: GET_MOVIE_GENRES_SUCCESS,

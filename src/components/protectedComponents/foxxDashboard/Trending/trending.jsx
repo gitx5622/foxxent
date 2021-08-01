@@ -37,7 +37,7 @@ const Trending = withRouter(({ history }) => {
                                 media_type={trending.media_type}
                                 ratings={trending.vote_average}
                             />
-                        )}
+                        ).slice(0, 18)}
                     </div>
         <CustomPagination setPage={setPage}/>
         </div>

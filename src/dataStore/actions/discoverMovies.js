@@ -1,12 +1,12 @@
 import axiosConfig from '../../config/axiosConfig';
 import {GET_MOVIES, GET_MOVIES_ERROR, GET_MOVIES_SUCCESS} from "../dispatchTypes";
 
-export const discoverMovies = (dispatch, page) => {
+export const discoverMovies = (dispatch, page, genreforURL) => {
     dispatch({
         type: GET_MOVIES,
     });
     axiosConfig
-        .get(`discover/movie?api_key=2998365350d817e64e3abcd94126560c&page=${page}`)
+        .get(`discover/movie?api_key=2998365350d817e64e3abcd94126560c&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genreforURL}`)
         .then(response => {
             dispatch({
                 type: GET_MOVIES_SUCCESS,
