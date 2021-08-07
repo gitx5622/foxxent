@@ -12,7 +12,7 @@ export const discoverTvGenres = (dispatch) => {
         type: GET_TV_GENRES,
     });
     axiosConfig
-        .get(`https://api.themoviedb.org/3/genre/tv/list?api_key=2998365350d817e64e3abcd94126560c&language=en-US`)
+        .get(`https://api.themoviedb.org/3/genre/tv/list?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`)
         .then(response => {
             dispatch({
                 type: GET_TV_GENRES_SUCCESS,

@@ -10,7 +10,7 @@ export const discoverTrending = (dispatch, page) => {
         type: GET_TRENDING,
     });
     axiosConfig
-        .get(`trending/all/day?api_key=2998365350d817e64e3abcd94126560c&page=${page}`)
+        .get(`trending/all/day?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`)
         .then(response => {
             dispatch({
                 type: GET_TRENDING_SUCCESS,
